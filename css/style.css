@@ -11,6 +11,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 /* common styles */
 
 .section-title {
@@ -53,11 +57,6 @@ html {
   transform: scale(1.03);
 }
 
-/* body tag */
-body {
-  background-color: #f5f5f5;
-}
-
 /* website wrapper */
 
 .wrapper {
@@ -84,9 +83,14 @@ body {
   color: rgba(14, 14, 14, 0.5);
 }
 
+.banner__btn {
+  padding: 17px 34px;
+}
+
 /* vision of future section */
 
 .vision-of-future {
+  margin-block: 80px;
 }
 
 .vision-of-future__title {
@@ -97,6 +101,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-top: 32px;
 }
 
 /* * vision of future section single card */
@@ -112,9 +117,6 @@ body {
   align-items: flex-start;
 }
 
-.vision-of-future__card-content {
-}
-
 .vision-of-future__card-content > img {
   display: block;
   margin-bottom: 24px;
@@ -125,4 +127,155 @@ body {
 
 .vision-of-future__card-content > p {
   margin-block: 12px 0;
+}
+
+/* vision of future card individual styling */
+/* first card */
+.vision-of-future__card:first-child {
+  background: rgba(84, 144, 245, 0.2);
+}
+
+.vision-of-future__card:first-child > button {
+  background: rgba(84, 144, 245, 1);
+}
+
+/* second card */
+.vision-of-future__card:nth-child(2) {
+  background: #c6e4d6;
+}
+
+.vision-of-future__card:nth-child(2) > button {
+  background: #09a15c;
+}
+
+/* third card  */
+
+.vision-of-future__card:last-child {
+  background: #f7ebcf;
+}
+
+.vision-of-future__card:last-child > button {
+  background: #ffc239;
+}
+
+/* recent news section  */
+
+.recent-news {
+  margin-block: 80px;
+}
+
+.recent-news > .section-description {
+  margin-block: 24px 32px;
+}
+
+.recent-news__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recent-news__card {
+  padding: 48px;
+  display: flex;
+  gap: 32px;
+  padding: 48px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.recent-news__card-img-wrapper {
+  border-radius: 24px;
+  background: red;
+}
+
+.recent-news__card-img-wrapper > img {
+  display: block;
+  border-radius: 24px;
+}
+
+.recent-news__card-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.recent-news__card-title {
+  font-size: 32px;
+  color: rgba(14, 14, 14, 0.8);
+}
+
+.recent-news__card-sub-image {
+  display: block;
+  object-fit: contain;
+}
+
+.recent-news__card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+/* donate today section */
+
+.donate-today {
+  margin-block: 80px;
+}
+
+.donate-today__title {
+  text-align: center;
+}
+
+.donate-today__description {
+  text-align: center;
+  margin-block: 24px 32px;
+  max-width: 1104px;
+  margin-inline: auto;
+}
+
+.donate-today__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.donate-today__cards {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-today__card {
+  color: rgba(14, 14, 14, 0.8s);
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  transition: background 300ms ease-out;
+  cursor: pointer;
+}
+
+.donate-today__card:hover {
+  background: #c6e4d6;
+}
+
+.donate-today__user-amount {
+  padding-block: 20px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  width: 80.625%;
+}
+
+.donate-today__user-amount::placeholder {
+  font-size: 20px;
+  color: rgba(14, 14, 14, 0.3);
+  text-align: center;
+}
+
+.donate-today__btn {
+  padding: 17px 34px;
 }
