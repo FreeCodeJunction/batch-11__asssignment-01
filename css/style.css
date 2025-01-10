@@ -279,3 +279,84 @@ body {
 .donate-today__btn {
   padding: 17px 34px;
 }
+
+/* newsletter section */
+
+.newsletter {
+  padding: 80px;
+  background: #c6e4d6;
+  border-radius: 24px;
+}
+
+.newsletter__title {
+  text-align: center;
+}
+
+.newsletter__description {
+  margin-block: 16px 24px;
+  text-align: center;
+  max-width: 622px;
+  margin-inline: auto;
+}
+
+.newsletter__visitor-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 25px;
+}
+
+.newsletter__visitor-email {
+  padding: 18px 0 18px 40px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  display: block;
+  background: #ffffff;
+  min-width: 660px;
+}
+
+.newsletter__visitor-email::placeholder {
+  color: rgba(14, 14, 14, 0.3);
+}
+
+.newsletter__info-btn {
+  padding: 15px 34px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.newsletter__sub-description {
+  text-align: center;
+  line-height: normal;
+}
+
+/* footer section */
+
+.footer {
+}
+
+.footer__title {
+  font-size: 32px;
+  padding-block: 50px 31.5px;
+  text-align: center;
+}
+
+.footer__bottom-border {
+  height: 1px;
+  background: rgba(14, 14, 14, 0.1);
+  max-width: 1122px;
+  margin-inline: auto;
+}
+
+.footer__social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 32.5px 50px;
+  gap: 23px;
+}
+
+.footer__social-icon-container > img {
+  display: block;
+  object-fit: contain;
+}
