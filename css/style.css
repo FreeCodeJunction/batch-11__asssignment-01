@@ -1,3 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* common styles */
+
+.section-title {
+  /* font-weight: 800;
+  font-size: 40px; */
+  font: 800 40px "Fira Sans", serif;
+  color: #0e0e0e;
+}
+
+.section-subtitle {
+  font: 800 20px "Fira Sans", serif;
+  color: rgba(14, 14, 14, 0.8);
+}
+
+.section-description {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(14, 14, 14, 0.7);
+  text-align: left;
+}
+
+.common-btn {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 13px 26px;
+  background-color: #006a50;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+/* hover effects  */
+
+.common-btn:hover {
+  background-color: rgb(32, 134, 11);
+  transform: scale(1.03);
+}
+
+/* body tag */
 body {
-  background-color: aqua;
+  background-color: #f5f5f5;
+}
+
+/* website wrapper */
+
+.wrapper {
+  max-width: 1600px;
+  margin-inline: auto;
+  padding: 0 160px;
+}
+
+/* banner section */
+.banner {
+  border-radius: 24px;
+  padding: 117.5px 60px 117.5px 60px;
+  background: #c6e4d6 url("../assets/hero.png") right 60px center no-repeat;
+}
+
+.banner__title {
+  font-size: 56px;
+  margin-block: 16px 24px;
+  max-width: 622px;
+}
+
+.banner__subtitle {
+  font-size: 24px;
+  color: rgba(14, 14, 14, 0.5);
+}
+
+/* vision of future section */
+
+.vision-of-future {
+}
+
+.vision-of-future__title {
+  margin-bottom: 24px;
+}
+
+.vision-of-future__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* * vision of future section single card */
+
+.vision-of-future__card {
+  padding: 32px;
+  border-radius: 16px;
+  background: rgba(84, 144, 245, 0.2);
+  min-height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.vision-of-future__card-content {
+}
+
+.vision-of-future__card-content > img {
+  display: block;
+  margin-bottom: 24px;
+  aspect-ratio: 1;
+  width: 64px;
+  object-fit: contain;
+}
+
+.vision-of-future__card-content > p {
+  margin-block: 12px 0;
 }
