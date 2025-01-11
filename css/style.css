@@ -74,7 +74,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 24px;
+  padding: 24px 160px;
 }
 
 .header__logo {
@@ -426,6 +426,10 @@ body {
   transition: background 300ms ease-out;
   cursor: pointer;
   transition: all 0.2s ease-out;
+}
+
+.donate-today__card:nth-child(2) {
+  background: #c6e4d6;
 }
 
 .donate-today__card:hover {
